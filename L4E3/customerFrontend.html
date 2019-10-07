@@ -3,8 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Aaron's Online Store</title>
+    <script type="text/javascript" src="formChecker.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1>Aaron's Online Store</h1>
+    <form onsubmit="return validate()"class="" action="customerBackend.php" method="POST">
+      Username: <input type="text" name="user" id = "user" value="">
+      Password: <input type="text" name="pw" id="pw" value="">
+      <select name="shipping" id="choice">
+        <option name="null"value="null">----</option>
+        <option name="free"value="free">7 Day Shipping - FREE<br>
+        <option name="overnight"value="overnight">Overnight Shipping - 50.00<br>
+        <option name="three"value="three">3 Day Shipping - 5.00<br>
+      </select>
+
+      <h3>RTX 2080 TI - $800</h3><br>
+      <img height="300px" width="300px"src="rtx.jpg" alt="">
+      Quantity: <input type="text" id="item1"name="item1" value=""><br><br>
+
+      <h3>H440 - $100</h3><br>
+      <img height="300px" width="300px"src="h440.png" alt="">
+      Quantity: <input type="text" id="item2"name="item2" value=""><br><br>
+
+      <h3>Intel i9- $700</h3><br>
+      <img height="300px" width="300px"src="i9.jpg" alt="">
+      Quantity: <input type="text" id="item3"name="item3" value=""> <br><br><br>
+
+      Submit: <input type="submit" name="submit" value="Submit">
+
+      
+    </form>
 
   </body>
 </html>
