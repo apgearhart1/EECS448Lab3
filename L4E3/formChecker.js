@@ -1,3 +1,7 @@
+function reset(){
+  document.getElementById('form').reset();
+}
+
 function validate(){
 
   var message = "";
@@ -29,14 +33,7 @@ function validate(){
 }
 
 
-function resetForm(){
-  var email = document.getElementById('user').value = '';
-  var pass = document.getElementById('pw').value = '';
-  var item1 = document.getElementById('item1').value = '';
-  var item2 = document.getElementById('item2').value = '';
-  var item3 = document.getElementById('item3').value = '';
-  var choice = document.getElementById('choice').value = "----";
-}
+
 
 function validEmail(email){
   return /\S+@\S+\.\S+/.test(mail);
